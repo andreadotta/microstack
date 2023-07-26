@@ -1,0 +1,38 @@
+# Ignore dependencies by ignoring node_modules
+node_modules/
+
+# Ignore build and distribution directories
+dist/
+build/
+
+# Ignore environment variables, which might contain sensitive information
+.env
+.env.local
+.env.*.local
+
+# Ignore the .next folder (specific to Next.js projects)
+.next
+
+# Ignore logs
+/logs/
+
+# Ignore cache folder
+/.cache
+
+# Ignore backup files (any filename ending with .bak)
+*.bak
+
+# Ignore Visual Studio Code settings
+.vscode
+
+# Ignore IntelliJ IDEA settings
+.idea
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore Next.js type declarations file
+next-env.d.ts

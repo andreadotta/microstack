@@ -1,0 +1,92 @@
+export const usersInitDb = [
+  {
+    name: 'Ciolanka',
+    surname: 'Sbilenka',
+    email: 'ciolanka.sbilenka@example.com',
+    phone: '1234567890',
+  },
+  {
+    name: 'Otto',
+    surname: 'Vasken',
+    email: 'otto.vasken@example.com',
+    phone: '0987654321',
+  },
+  {
+    name: 'Sudo',
+    surname: 'Magodo',
+    email: 'sudo.magodo@example.com',
+    phone: '1122334455',
+  },
+  {
+    name: 'Alì',
+    surname: 'Albar',
+    email: 'ali.albar@example.com',
+    phone: '2233445566',
+  },
+  {
+    name: 'Dalì',
+    surname: 'Alà',
+    email: 'dali.ala@example.com',
+    phone: '3344556677',
+  },
+  {
+    name: 'Marty',
+    surname: 'McFly',
+    email: 'marty.mcfly@example.com',
+    phone: '7788990011',
+  },
+  {
+    name: 'Indiana',
+    surname: 'Jones',
+    email: 'indiana.jones@example.com',
+    phone: '1122336677',
+  },
+  {
+    name: 'John',
+    surname: 'McClane',
+    email: 'john.mcclane@example.com',
+    phone: '9988776655',
+  },
+  {
+    name: 'Sarah',
+    surname: 'Connor',
+    email: 'sarah.connor@example.com',
+    phone: '1122339911',
+  },
+  {
+    name: 'Ellen',
+    surname: 'Ripley',
+    email: 'ellen.ripley@example.com',
+    phone: '2233445522',
+  },
+  {
+    name: 'Jack',
+    surname: 'Sparrow',
+    email: 'jack.sparrow@example.com',
+    phone: '1122556677',
+  },
+  {
+    name: 'Neo',
+    surname: 'Anderson',
+    email: 'neo.anderson@example.com',
+    phone: '4455667788',
+  },
+  {
+    name: 'Clarice',
+    surname: 'Starling',
+    email: 'clarice.starling@example.com',
+    phone: '3344112255',
+  },
+  {
+    name: 'Franco',
+    surname: 'Lechner',
+    email: 'franco.lechner@example.com',
+    phone: '7788334455',
+  },
+  {
+    name: 'Hermione',
+    surname: 'Granger',
+    email: 'hermione.granger@example.com',
+    phone: '9988445577',
+  },
+];

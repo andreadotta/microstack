@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "commons-api-client/*": ["../commons-api-client/index*"],
+    },
+    "lib": ["ESNext", "dom"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "resolveJsonModule": true, //It's essential for making the config work properly.
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

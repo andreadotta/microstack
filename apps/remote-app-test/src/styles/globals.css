@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puoi definire le tue variabili personalizzate qui */
+:root {
+  --primary-color: #0a559f;
+  --secondary-color: #19216c;
+}
+
+/* Stili personalizzati globali */
+body {
+  /* Imposta il colore di sfondo globale */
+  background-color: var(--primary-color);
+  /* Imposta il colore del testo globale */
+  color: white;
+}

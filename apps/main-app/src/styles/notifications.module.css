@@ -1,0 +1,26 @@
+/* notifications.module.css */
+.notification-container {
+  @apply mx-auto max-w-2xl p-4;
+}
+
+.notification-item {
+  @apply bg-gray-100 p-4 mb-4 shadow-lg;
+  @apply px-[5%]; /* Aggiungo il padding laterale del 5% */
+}
+
+/* Stili in stile Material Design */
+.notification-item p {
+  @apply mb-2;
+  @apply text-black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.notification-item h2 {
+  @apply text-xl font-semibold;
+  color: #1a237e;
+}
+
+.notification-item p.meta {
+  @apply text-sm;
+  color: #757575;
+}

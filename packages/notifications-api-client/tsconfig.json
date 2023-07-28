@@ -13,14 +13,17 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
     "resolveJsonModule": true, //It's essential for making the config work properly.
-    "isolatedModules": true,
+    "isolatedModules": false,
     "moduleResolution": "node",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
+  },
+  "output": {
+    "path": "dist",
   },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

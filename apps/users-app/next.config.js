@@ -1,24 +1,28 @@
 /** @type {import('next').NextConfig} */
+
+const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
+const deps = require('./package.json').dependencies;
+const { ModuleFederationPlugin } = require('@module-federation/nextjs-mf');
+
 const nextConfig = {
-  transpilePackages: [],
+  transpilePackages: ['commons-api-client', 'users-api-client', 'notifications-api-client'],
+  reactStrictMode: true,
   experimental: {
-    appDir: true
+    appDir: true,
   },
-  webpack(config, { isServer }) {
+  webpack: (config, { isServer }) => {
     config.plugins.push(
       new NextFederationPlugin({
         name: 'users',
-        filename: 'static/chunks/userEntry.js',
+        filename: 'static/chunks/remoteEntry.js',
+        remotes: {},
         exposes: {
-          // specifica il modulo che deve essere esportato
-          './SomeComponent': './components/someComponent.js',
-        },
+          './UsersPage': './src/components/users.tsx',
+        }
       })
     );
-
     return config;
   },
-  port: 3001,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

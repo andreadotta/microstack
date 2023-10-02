@@ -1,17 +1,16 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Puoi definire le tue variabili personalizzate qui */
 :root {
   --primary-color: #0a559f;
   --secondary-color: #19216c;
+  --dark-blue: #0a224e;
 }
 
-/* Stili personalizzati globali */
 body {
-  /* Imposta il colore di sfondo globale */
-  background-color: var(--primary-color);
-  /* Imposta il colore del testo globale */
-  color: white;
+  @apply bg-gradient-to-r from-blue-900 to-blue-700;
+  color: #333; /* Colore del testo: grigio scuro */
+  font-family: 'Roboto', sans-serif; /* Utilizzo di Roboto come font globale */
 }

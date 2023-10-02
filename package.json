@@ -10,13 +10,14 @@
     "main-app-dev": "cd apps/main-app && pnpm dev",
     "web-users-build": "cd apps/users-app && pnpm build",
     "web-users-dev": "cd apps/users-app && pnpm dev",
-    "web-users-vite-build": "cd apps/users && pnpm build",
-    "web-users-vite-dev": "cd apps/users && pnpm preview --host",
     "users-service-dev": "cd apps/users-service && pnpm start:dev",
     "users-service-build": "cd apps/users-service && pnpm build",
     "notifications-service-dev": "cd apps/notifications-service && pnpm start:dev",
     "notifications-service-build": "cd apps/notifications-service && pnpm build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:services": "pnpm run users-service-dev & pnpm run notifications-service-dev",
+    "start:apps": "pnpm run remote-app-test-dev & pnpm run main-app-test-dev",
+    "start:all": "pnpm run start:services & pnpm run start:apps"
   },
   "keywords": [],
   "author": "bauhausk",

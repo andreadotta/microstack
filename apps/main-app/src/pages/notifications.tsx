@@ -1,26 +1,10 @@
-import React from 'react';
-// pages/index.js
-import dynamic from 'next/dynamic';
+import NotificationsComponent from '@/components/notifications';
 
-import styles from '../styles/notifications.module.css';
-
-interface NotificationsProps {
-  styles: {
-    readonly [key: string]: string;
-  };
+export default function NotificationsPage() {
+  return (
+    <>
+      <div className="text-4xl font-bold text-center py-4 shadow-md">Main App</div>
+      <NotificationsComponent />
+    </>
+  );
 }
-
-// Utilizza il componente remoto "UsersPage"
-const Notifications = dynamic<NotificationsProps>(() => import('users/Notifications'), {
-  ssr: false,  
-})
-
-const NotificationsComponent = () => {
-  return <>
-  <div>Main App</div>
-  <Notifications styles={styles} /></>;
-};
-
-
-
-export default NotificationsComponent;
